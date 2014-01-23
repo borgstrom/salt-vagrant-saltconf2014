@@ -15,7 +15,7 @@ You provide a configuration in your <code>Vagrantfile</code> and Vagrant will cr
 
 !
 
-# Vagrant is the best way to build software
+# Vagrant is the *best* way to build software
 
 * Solves the "works for me" problem
 * Easily share settings with a team via SCM (Git, right?)
@@ -43,7 +43,7 @@ It also has support for some of those other configuration engines, like Puppet, 
 
 !
 
-# Got devops?
+# We have a problem
 
 Provisioners are great but Salt introduces a huge learning curve when developers are first trying to use it with Vagrant.
 
@@ -51,4 +51,24 @@ Vagrant runs Salt in master-less mode by default, meaning the majority of the Sa
 
 !
 
-# 
+# Got devops?
+
+Developers that are working in teams that do not have the support of a full time devops team or person end up missing out on all of, or at least some of, the awesomeness.
+
+!
+
+# A little context
+
+Discuss the situation. Why did we try to make this problem disappear.
+
+!
+
+# ...
+
+Talk about how we approached the problem first (remote master). Problems encountered, lessons learned.
+
+Talk about our simplification process and reverting to running with a local master.
+
+Talk about leveraging formulas and why they are important for developers.
+
+Introduce StackStrap
