@@ -13,10 +13,23 @@
     -ms-touch-action: none;
     -moz-user-select:none;
   }
+  div, td, p {
+      font-size: 40px;
+  }
+  pre {
+    font-size: 28px;
+    background: #002b36;
+    color: #657b84;
+    padding: 8px 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .annotation {
+    font-size: 24px;
+  }
   div.centered {
   	margin:auto;
-  	font-size:40px;
-  	width:25em;
+  	width:28em;
   }
   .slideCount {
     position: fixed;
@@ -25,6 +38,7 @@
     height:1.5em;
     width:8em;
     overflow:hidden;
+    font-size: 12px;
   }
    .slideProgress
   {
@@ -77,15 +91,14 @@
 .small {
     font-size: 0.8em;
 }
+.tiny {
+    font-size: 0.5em;
+}
 a, a:link, a:visited {
     color: #333;
     font-weight: bold;
     text-decoration: none;
 }
-   code {
-       background: rgb(210, 210, 210);
-       padding: 0 0.25em;
-  }
    .for-print .content-holder {
         width: 100%;
         height: 100%;
