@@ -348,7 +348,27 @@ We are calling it [StackStrap][]
 
 !
 
+## Salt + Templates = Awesome
+
+Aside from just automating the salt integration the other major focus of StackStrap is to provide a way to create reusable project templates.
+
+This means that if a team is building a lot of apps that follow patterns they can create a template, with their salt logic built-in, and then quickly spin up projects based on the template.
+
+!
+
+## More info
+
+You can find full documentation on RTFD: http://rtfd.org/stackstrap
+
+Project info and development takes place on GitHub: https://github.com/freesurface/stackstrap
+
+Feel free to reach out to myself ([@borgstrom][]) or [@brentsmyth][] if you have questions or want more info.
+
+!
+
 # EOF
+
+Thanks!
 
 [@borgstrom]: https://github.com/borgstrom
 [@brentsmyth]: https://github.com/brentsmyth
