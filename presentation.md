@@ -53,13 +53,34 @@ Vagrant runs Salt in master-less mode by default, meaning the majority of the Sa
 
 # Got devops?
 
-Developers that are working in teams that do not have the support of a full time devops team or person end up missing out on all of, or at least some of, the awesomeness.
+Developers that are working in teams and do not have the support of a full time devops team or person end up missing out on all of, or at least some of, the awesomeness.
 
 !
 
 # A little context
 
-Discuss the situation. Why did we try to make this problem disappear.
+As a systems engineer who has used Salt extensively since 2010, the choice of using Salt as a way to provision development environments seems natural to me. However, I often need to remind myself that developers may not be as savvy as I am.
+
+!
+
+# The world of Marketing
+
+The majority of work I do as a systems engineer involves working with interactive/digital teams tasked with building web apps, Facebook tabs, microsites, etc.
+
+These teams are typically under very short deadlines and the software they build can have a very short life span. (ie. The promotion is live for 6 weeks and then is shutdown).
+
+!
+
+# Little room for process improvements
+
+This environment of short deadlines and short lifespans leads to a situation where these teams **want** to improve their development process and work flow but rarely have the luxury to do so.
+
+!
+
+# Approaching the problem
+
+
+
 
 !
 
