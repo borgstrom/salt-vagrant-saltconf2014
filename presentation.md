@@ -3,6 +3,8 @@
 **SaltConf 2014**<br />
 Presented by: Evan Borgstrom ([@borgstrom][])
 
+<sub><sup>https://github.com/borgstrom/salt-vagrant-saltconf2014</sup></sub>
+
 !
 
 ## Vagrant 101
