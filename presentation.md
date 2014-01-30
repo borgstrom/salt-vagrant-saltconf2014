@@ -62,7 +62,21 @@ Developers that are working in teams and do not have the support of a full time 
 
 ## My background
 
-I am a professional systems engineer with 13 years of experience who has used Salt extensively since 2010. This made the choice of using Salt as a way to provision development environments a "no-brainer" to me.
+I am a professional systems engineer with 13 years of experience who has used Salt extensively since 2011. This made the choice of using Salt as a way to provision development environments a "no-brainer" to me.
+
+!
+
+## Involvement with Salt
+
+First version tested: <code>0.7.0</code> &mdash; April 2011
+
+First version in production: <code>0.8.8</code> &mdash; June 2011 (<code>0.9.5</code> full production)
+
+First contribution: January 2012
+
+Influenced the addition of "requisite in" statements: March 2012 
+
+Early user of the Event system: <code>0.10.2</code> &mdash; August 2012
 
 !
 
@@ -140,7 +154,7 @@ Now whomever is responsible for the master has to manually accept the key when e
 
 You can go with a strategy of pre-accepting keys by generating them and placing them on the master in the correct directory.
 
-Now you have a security asset to manage that is going to be shared by multiple users. This is poor security practice, especially if your salt server configures proprietary software/information/etc for production.
+Now you have a security asset to manage that is going to be shared by multiple users. This is poor security practice, especially if your Salt server configures proprietary software/information/etc for production.
 
 !
 
@@ -152,7 +166,7 @@ Another drawback of the remote master approach is that it requires a Salt master
 
 ## Hard to update project states
 
-The final issue we ran into with the master mode, which partly ties into the previous point, is that typically the process for creating and getting the salt states onto the master requires manual work from one or more people (manual update, GIT push permissions, etc).
+The final issue we ran into with the master mode, which partly ties into the previous point, is that typically the process for creating and getting the Salt states onto the master requires manual work from one or more people (manual update, GIT push permissions, etc).
 
 !
 
@@ -220,7 +234,7 @@ pillar_roots:
     Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       ...
 
-      # provision our box with salt but do not run the highstate yet
+      # provision our box with Salt but do not run the highstate yet
       config.vm.provision :salt do |salt|
         salt.minion_config = "salt/minion"
         salt.run_highstate = false
@@ -239,7 +253,7 @@ pillar_roots:
 
 The first thing we do is define a little snippet that will clone a GIT repository containing state & pillar data, setting it up as <code>/srv</code>.
 
-Then we tell the salt plugin not to run <code>highstate</code> initially. Instead we call our snippet then once it has completed we manually call <code>highstate<code>.
+Then we tell the Salt plugin not to run <code>highstate</code> initially. Instead we call our snippet then once it has completed we manually call <code>highstate<code>.
 
 !
 
@@ -336,6 +350,24 @@ Finally we add any formulas we want to use. These become available to our projec
 
 !
 
+# Deployment
+
+!
+
+## Deploy how you develop
+
+Up until this point the emphasis has been on developing, but the decisions made about structuring a project always kept deployment front of mind.
+
+!
+
+## Documenting your Projects config
+
+Since our approach has Project specific state & pillar data separated from the "main" state logic it provides a very concise set of requirements.
+
+These requirements can be easily translated into non-Salt environments, or if an operations team already maintains a production Salt server they can be used as-is.
+
+!
+
 # Introducing [StackStrap][]
 
 !
@@ -350,9 +382,9 @@ We are calling it [StackStrap][]
 
 ## Salt + Templates = Awesome
 
-Aside from just automating the salt integration the other major focus of StackStrap is to provide a way to create reusable project templates.
+Aside from just automating the Salt integration the other major focus of StackStrap is to provide a way to create reusable project templates.
 
-This means that if a team is building a lot of apps that follow patterns they can create a template, with their salt logic built-in, and then quickly spin up projects based on the template.
+This means that if a team is building a lot of apps that follow patterns they can create a template, with their Salt logic built-in, and then quickly spin up projects based on the template.
 
 !
 
